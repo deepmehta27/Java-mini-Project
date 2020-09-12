@@ -16,7 +16,7 @@ public class Splash extends javax.swing.JFrame {
         for(int i=1;i<=3;i++)
         {
         t.sleep(1000);}
-         MainMenu mms  = new MainMenu();
+         LoginPage pg  = new LoginPage();
         
         dispose();
     }
@@ -59,11 +59,11 @@ public class Splash extends javax.swing.JFrame {
         jLabel2.setBounds(40, 120, 520, 70);
 
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\travel.png")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\travel.png")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(200, 190, 190, 160);
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700403809 (1).jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700403809 (1).jpg")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, 0, 600, 400);
 

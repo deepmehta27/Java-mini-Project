@@ -86,7 +86,7 @@
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\DELL\Downloads\travel.png"/>
+              <Image iconType="2" name="C:\Users\DELL\Downloads\images\travel.png"/>
             </Property>
           </Properties>
           <Constraints>
@@ -98,7 +98,7 @@
         <Component class="javax.swing.JLabel" name="jLabel4">
           <Properties>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="2" name="C:\Users\DELL\Downloads\wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700403809 (1).jpg"/>
+              <Image iconType="2" name="C:\Users\DELL\Downloads\images\wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700403809 (1).jpg"/>
             </Property>
           </Properties>
           <Constraints>

@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.travel;
 
 /**
@@ -260,7 +256,7 @@ public class flightBooking extends javax.swing.JFrame {
         jPanel1.add(jPanel3);
         jPanel3.setBounds(10, 10, 680, 420);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\1287373.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\1287373.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 700, 440);
 

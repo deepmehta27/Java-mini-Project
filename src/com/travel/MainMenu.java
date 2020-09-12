@@ -11,7 +11,7 @@ public class MainMenu extends javax.swing.JFrame {
     
     public MainMenu() {
         initComponents();
-        setVisible(true);
+        
        clockDisplay();
 
     }
@@ -82,15 +82,15 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel1.add(jLabel5);
         jLabel5.setBounds(440, 240, 220, 22);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\wp2052862-etihad-wallpapers.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\wp2052862-etihad-wallpapers.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(20, 90, 300, 140);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\atlantis_hotel_dubai-wallpaper-1366x768.jpg")); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\atlantis_hotel_dubai-wallpaper-1366x768.jpg")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(410, 90, 270, 140);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\oswego_sunset.jpg")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\oswego_sunset.jpg")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 700, 470);
 
