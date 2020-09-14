@@ -34,7 +34,7 @@ public class LoginPage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(300, 150));
 
-        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
         jPanel1.setMaximumSize(new java.awt.Dimension(550, 400));
         jPanel1.setMinimumSize(new java.awt.Dimension(550, 400));
         jPanel1.setPreferredSize(new java.awt.Dimension(550, 400));
@@ -42,16 +42,16 @@ public class LoginPage extends javax.swing.JFrame {
         jPanel1.add(jLabel1);
         jLabel1.setBounds(40, 90, 0, 210);
 
-        jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setText("LOGIN");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(280, 70, 200, 40);
+        jLabel2.setBounds(280, 60, 200, 40);
 
         jButton1.setBackground(new java.awt.Color(51, 204, 0));
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -59,40 +59,45 @@ public class LoginPage extends javax.swing.JFrame {
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(280, 280, 190, 30);
+        jButton1.setBounds(280, 270, 190, 30);
 
         jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Username");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(280, 120, 110, 40);
+        jLabel3.setBounds(280, 110, 110, 40);
 
         jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Password");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(280, 200, 120, 20);
+        jLabel4.setBounds(280, 190, 120, 20);
 
         username.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.add(username);
-        username.setBounds(280, 160, 190, 30);
+        username.setBounds(280, 150, 190, 30);
 
         pass.setBackground(new java.awt.Color(255, 255, 255));
+        pass.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passActionPerformed(evt);
+            }
+        });
         jPanel1.add(pass);
-        pass.setBounds(280, 230, 190, 30);
+        pass.setBounds(280, 220, 190, 30);
 
         jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
-        jLabel5.setText("Create an Account");
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setText("new user? create account");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(280, 320, 120, 16);
+        jLabel5.setBounds(280, 300, 150, 20);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\laptop-device-flat-circle-icon-vector-9327220.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Laptop.jpg")); // NOI18N
         jPanel1.add(jLabel6);
         jLabel6.setBounds(40, 120, 200, 180);
 
@@ -113,8 +118,8 @@ public class LoginPage extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
          try{
              Class.forName("com.mysql.jdbc.Driver");
-             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/testdb","root","");
-             String sql="Select * from logindatabase where username=? and password=?";
+             Connection con=DriverManager.getConnection("jdbc:mysql://localhost:3306/signup","root","");
+             String sql="Select * from signupdatabase where username=? and password=?";
              PreparedStatement pst=con.prepareStatement(sql);
              pst.setString(1, username.getText());
              pst.setString(2, pass.getText());
@@ -142,6 +147,10 @@ public class LoginPage extends javax.swing.JFrame {
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
         Signup sgn=new Signup();
     }//GEN-LAST:event_jLabel5MouseClicked
+
+    private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passActionPerformed
 
    
     public static void main(String args[]) {
