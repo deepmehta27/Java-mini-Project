@@ -126,14 +126,14 @@ public class LoginPage extends javax.swing.JFrame {
              ResultSet rs=pst.executeQuery();
              if(rs.next())
              {
-                 JOptionPane.showMessageDialog(null, "Username and Password Matched");
+                 JOptionPane.showMessageDialog(null, "LOGIN SUCCESSFULLY");
                  MainMenu menu=new MainMenu();
                  menu.setVisible(true);
                  setVisible(false);
                  
              }
              else{
-                 JOptionPane.showMessageDialog(null, "Username and Password do not Matched");
+                 JOptionPane.showMessageDialog(null, "INVALID DETAILS");
                 
                  
              }
