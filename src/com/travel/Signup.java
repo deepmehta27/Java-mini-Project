@@ -36,17 +36,19 @@ public class Signup extends javax.swing.JFrame {
         jButton2 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
-        jPanel2 = new javax.swing.JPanel();
+        jButton3 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         firstname = new javax.swing.JTextField();
-        jLabel5 = new javax.swing.JLabel();
-        password = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         lastname = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
         username = new javax.swing.JTextField();
+        jLabel5 = new javax.swing.JLabel();
+        password = new javax.swing.JPasswordField();
+        jLabel1 = new javax.swing.JLabel();
+        Emailid = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
-        jButton3 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
 
         jLabel6.setText("jLabel6");
 
@@ -57,9 +59,10 @@ public class Signup extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(445, 425));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel1.setMaximumSize(new java.awt.Dimension(550, 400));
-        jPanel1.setMinimumSize(new java.awt.Dimension(550, 400));
-        jPanel1.setPreferredSize(new java.awt.Dimension(550, 400));
+        jPanel1.setMaximumSize(new java.awt.Dimension(635, 480));
+        jPanel1.setMinimumSize(new java.awt.Dimension(635, 480));
+        jPanel1.setPreferredSize(new java.awt.Dimension(635, 480));
+        jPanel1.setRequestFocusEnabled(false);
         jPanel1.setLayout(null);
 
         jButton1.setBackground(new java.awt.Color(0, 102, 255));
@@ -68,88 +71,102 @@ public class Signup extends javax.swing.JFrame {
         jPanel1.add(jButton1);
         jButton1.setBounds(670, 480, 72, 22);
 
-        jPanel2.setBackground(new java.awt.Color(0, 102, 255));
-        jPanel2.setLayout(null);
-
-        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel2.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("FirstName");
-        jPanel2.add(jLabel2);
-        jLabel2.setBounds(30, 60, 80, 20);
-
-        firstname.setBackground(new java.awt.Color(255, 255, 255));
-        firstname.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(firstname);
-        firstname.setBounds(30, 90, 290, 30);
-
-        jLabel5.setBackground(new java.awt.Color(238, 238, 238));
-        jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("Password");
-        jPanel2.add(jLabel5);
-        jLabel5.setBounds(30, 270, 80, 20);
-
-        password.setBackground(new java.awt.Color(255, 255, 255));
-        password.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(password);
-        password.setBounds(30, 300, 290, 30);
-
-        jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel3.setText("LastName");
-        jPanel2.add(jLabel3);
-        jLabel3.setBounds(30, 130, 90, 20);
-
-        lastname.setBackground(new java.awt.Color(255, 255, 255));
-        lastname.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(lastname);
-        lastname.setBounds(30, 160, 290, 30);
-
-        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel4.setText("Username");
-        jPanel2.add(jLabel4);
-        jLabel4.setBounds(30, 200, 80, 20);
-
-        username.setBackground(new java.awt.Color(255, 255, 255));
-        username.setForeground(new java.awt.Color(0, 0, 0));
-        jPanel2.add(username);
-        username.setBounds(30, 230, 290, 30);
-
-        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("Create an Account");
-        jPanel2.add(jLabel7);
-        jLabel7.setBounds(80, 20, 240, 30);
-
-        jButton3.setBackground(new java.awt.Color(51, 102, 255));
+        jButton3.setBackground(new java.awt.Color(255, 255, 255));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setText("Sign Up");
+        jButton3.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\signup.png")); // NOI18N
         jButton3.setBorder(null);
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
-        jPanel2.add(jButton3);
-        jButton3.setBounds(230, 360, 130, 30);
+        jPanel1.add(jButton3);
+        jButton3.setBounds(430, 410, 130, 50);
 
-        jPanel1.add(jPanel2);
-        jPanel2.setBounds(30, 30, 390, 420);
+        jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel2.setText("FirstName");
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(380, 100, 80, 20);
+
+        firstname.setBackground(new java.awt.Color(255, 255, 255));
+        firstname.setForeground(new java.awt.Color(0, 0, 0));
+        firstname.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(firstname);
+        firstname.setBounds(380, 120, 230, 30);
+
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setText("LastName");
+        jPanel1.add(jLabel3);
+        jLabel3.setBounds(380, 160, 90, 20);
+
+        lastname.setBackground(new java.awt.Color(255, 255, 255));
+        lastname.setForeground(new java.awt.Color(0, 0, 0));
+        lastname.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(lastname);
+        lastname.setBounds(380, 180, 230, 30);
+
+        jLabel4.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setText("Username");
+        jPanel1.add(jLabel4);
+        jLabel4.setBounds(380, 280, 80, 20);
+
+        username.setBackground(new java.awt.Color(255, 255, 255));
+        username.setForeground(new java.awt.Color(0, 0, 0));
+        username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(username);
+        username.setBounds(380, 300, 230, 30);
+
+        jLabel5.setBackground(new java.awt.Color(238, 238, 238));
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setText("Password");
+        jPanel1.add(jLabel5);
+        jLabel5.setBounds(380, 340, 80, 20);
+
+        password.setBackground(new java.awt.Color(255, 255, 255));
+        password.setForeground(new java.awt.Color(0, 0, 0));
+        password.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(password);
+        password.setBounds(380, 360, 230, 30);
+
+        jLabel1.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel1.setText("Email Id");
+        jPanel1.add(jLabel1);
+        jLabel1.setBounds(380, 220, 100, 19);
+
+        Emailid.setBackground(new java.awt.Color(255, 255, 255));
+        Emailid.setForeground(new java.awt.Color(0, 0, 0));
+        Emailid.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jPanel1.add(Emailid);
+        Emailid.setBounds(380, 240, 230, 30);
+
+        jLabel7.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel7.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setText("Sign UP");
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(400, 30, 180, 45);
+
+        jLabel8.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Group 46.png")); // NOI18N
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(50, 40, 300, 410);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 450, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 475, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 485, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -157,13 +174,14 @@ public class Signup extends javax.swing.JFrame {
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
     try {
-        String query="INSERT INTO `signupdatabase`(`FirstName`, `LastName`, `Username`, `Password`) VALUES (?,?,?,?)";
+        String query="INSERT INTO `signupdatabase`(`FirstName`, `LastName`, `Username`, `Password`,`Emailid`) VALUES (?,?,?,?,?)";
         con=DriverManager.getConnection("jdbc:mysql://localhost/signup","root","");
         pst=con.prepareStatement(query);
         pst.setString(1, firstname.getText());
         pst.setString(2, lastname.getText());
         pst.setString(3, username.getText());
         pst.setString(4, password.getText());
+        pst.setString(5, Emailid.getText());
         pst.executeUpdate();
         JOptionPane.showMessageDialog(null,"REGISTERED SUCCESSFULLY");
         LoginPage pg=new LoginPage();
@@ -214,18 +232,20 @@ public class Signup extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField Emailid;
     private javax.swing.JTextField firstname;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField lastname;
     private javax.swing.JPasswordField password;
     private javax.swing.JTextField username;

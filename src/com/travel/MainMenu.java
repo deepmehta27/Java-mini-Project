@@ -1,5 +1,6 @@
 
 package com.travel;
+import java.sql.SQLException;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.logging.Level;
@@ -31,8 +32,11 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(300, 150));
@@ -41,58 +45,78 @@ public class MainMenu extends javax.swing.JFrame {
         jPanel1.setLayout(null);
 
         jLabel2.setBackground(new java.awt.Color(238, 238, 238));
-        jLabel2.setFont(new java.awt.Font("Engravers MT", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(238, 238, 238));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("date");
+        jLabel2.setText("Date");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(460, 400, 220, 20);
+        jLabel2.setBounds(10, 10, 190, 20);
 
         jLabel3.setBackground(new java.awt.Color(238, 238, 238));
-        jLabel3.setFont(new java.awt.Font("Engravers MT", 0, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(238, 238, 238));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("time");
+        jLabel3.setText("Time");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(470, 430, 200, 20);
+        jLabel3.setBounds(550, 10, 140, 20);
 
         jLabel4.setBackground(new java.awt.Color(238, 238, 238));
-        jLabel4.setFont(new java.awt.Font("Engravers MT", 1, 18)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("FLIGHT BOOKING ");
+        jLabel4.setText("Flight");
         jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel4MouseClicked(evt);
             }
         });
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(50, 240, 240, 22);
+        jLabel4.setBounds(400, 50, 70, 30);
 
         jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Engravers MT", 1, 18)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("HOTEL BOOKING");
+        jLabel5.setText("About Us");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(440, 240, 220, 22);
+        jLabel5.setBounds(470, 50, 110, 30);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\wp2052862-etihad-wallpapers.jpg")); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Tropical Travels");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(20, 90, 300, 140);
+        jLabel6.setBounds(20, 40, 310, 40);
 
-        jLabel7.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\atlantis_hotel_dubai-wallpaper-1366x768.jpg")); // NOI18N
-        jPanel1.add(jLabel7);
-        jLabel7.setBounds(410, 90, 270, 140);
+        jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Account");
+        jPanel1.add(jLabel8);
+        jLabel8.setBounds(590, 50, 90, 30);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\oswego_sunset.jpg")); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel9.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel9.setText("Plan Your");
+        jPanel1.add(jLabel9);
+        jLabel9.setBounds(290, 130, 170, 40);
+
+        jLabel10.setFont(new java.awt.Font("Century Gothic", 1, 36)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setText("Next Trip With Us");
+        jPanel1.add(jLabel10);
+        jLabel10.setBounds(210, 170, 320, 40);
         jPanel1.add(jLabel1);
-        jLabel1.setBounds(0, 0, 700, 470);
+        jLabel1.setBounds(0, 0, 700, 0);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\MainMenu.png")); // NOI18N
+        jPanel1.add(jLabel7);
+        jLabel7.setBounds(0, 0, 700, 460);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -102,14 +126,21 @@ public class MainMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 465, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 457, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jLabel4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel4MouseClicked
-        flightBooking fb=new flightBooking();
+        try {
+            flightBooking fb=new flightBooking();
+        } catch (ClassNotFoundException ex) {
+            Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (SQLException ex) {
+            Logger.getLogger(MainMenu.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.dispose();
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
@@ -153,12 +184,15 @@ public class MainMenu extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 

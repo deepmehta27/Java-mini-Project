@@ -34,78 +34,89 @@ public class LoginPage extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(300, 150));
 
-        jPanel1.setBackground(new java.awt.Color(0, 102, 255));
-        jPanel1.setMaximumSize(new java.awt.Dimension(550, 400));
-        jPanel1.setMinimumSize(new java.awt.Dimension(550, 400));
-        jPanel1.setPreferredSize(new java.awt.Dimension(550, 400));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setMaximumSize(new java.awt.Dimension(635, 480));
+        jPanel1.setMinimumSize(new java.awt.Dimension(635, 480));
+        jPanel1.setPreferredSize(new java.awt.Dimension(635, 480));
         jPanel1.setLayout(null);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(40, 90, 0, 210);
 
-        jLabel2.setFont(new java.awt.Font("Arial Black", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("LOGIN");
+        jLabel2.setText("Login");
         jPanel1.add(jLabel2);
-        jLabel2.setBounds(280, 60, 200, 40);
+        jLabel2.setBounds(360, 50, 200, 60);
 
-        jButton1.setBackground(new java.awt.Color(51, 204, 0));
+        jButton1.setBackground(new java.awt.Color(255, 255, 255));
         jButton1.setFont(new java.awt.Font("Arial Rounded MT Bold", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
-        jButton1.setText("Login");
+        jButton1.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\login.png")); // NOI18N
+        jButton1.setBorder(null);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         jPanel1.add(jButton1);
-        jButton1.setBounds(280, 270, 190, 30);
+        jButton1.setBounds(370, 320, 190, 50);
 
-        jLabel3.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Username");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(280, 110, 110, 40);
+        jLabel3.setBounds(370, 130, 110, 40);
 
-        jLabel4.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Password");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(280, 190, 120, 20);
+        jLabel4.setBounds(370, 230, 120, 20);
 
         username.setBackground(new java.awt.Color(255, 255, 255));
+        username.setForeground(new java.awt.Color(0, 0, 0));
+        username.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        username.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usernameActionPerformed(evt);
+            }
+        });
         jPanel1.add(username);
-        username.setBounds(280, 150, 190, 30);
+        username.setBounds(370, 170, 190, 30);
 
         pass.setBackground(new java.awt.Color(255, 255, 255));
+        pass.setForeground(new java.awt.Color(0, 0, 0));
+        pass.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         pass.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 passActionPerformed(evt);
             }
         });
         jPanel1.add(pass);
-        pass.setBounds(280, 220, 190, 30);
+        pass.setBounds(370, 260, 190, 30);
 
-        jLabel5.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setText("new user? create account");
+        jLabel5.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("New user? create account...");
         jLabel5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jLabel5MouseClicked(evt);
             }
         });
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(280, 300, 150, 20);
+        jLabel5.setBounds(370, 380, 200, 20);
 
-        jLabel6.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Laptop.jpg")); // NOI18N
+        jLabel6.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Group 46.png")); // NOI18N
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(40, 120, 200, 180);
+        jLabel6.setBounds(40, 20, 300, 430);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 554, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -151,6 +162,10 @@ public class LoginPage extends javax.swing.JFrame {
     private void passActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_passActionPerformed
+
+    private void usernameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usernameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usernameActionPerformed
 
    
     public static void main(String args[]) {
