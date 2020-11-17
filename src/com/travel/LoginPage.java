@@ -140,6 +140,7 @@ public class LoginPage extends javax.swing.JFrame {
                  JOptionPane.showMessageDialog(null, "LOGIN SUCCESSFULLY");
                  MainMenu menu=new MainMenu();
                  menu.setVisible(true);
+                 menu.setUsername(username.getText());
                  setVisible(false);
                  
              }

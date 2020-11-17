@@ -224,6 +224,7 @@ public class flightBooking extends javax.swing.JFrame {
         buttonsearch.setBackground(new java.awt.Color(255, 255, 255));
         buttonsearch.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         buttonsearch.setForeground(new java.awt.Color(0, 0, 0));
+        buttonsearch.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\SEARCH.png")); // NOI18N
         buttonsearch.setBorder(null);
         buttonsearch.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -241,6 +242,7 @@ public class flightBooking extends javax.swing.JFrame {
         buttoncancel.setBackground(new java.awt.Color(255, 255, 255));
         buttoncancel.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         buttoncancel.setForeground(new java.awt.Color(0, 0, 0));
+        buttoncancel.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\CANCEL.png")); // NOI18N
         buttoncancel.setBorder(null);
         buttoncancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -324,7 +326,7 @@ public class flightBooking extends javax.swing.JFrame {
                 .addGroup(departtablejPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(cmbselectdepartflight, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(10, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         jPanel1.add(departtablejPanel);
@@ -409,7 +411,7 @@ public class flightBooking extends javax.swing.JFrame {
         jLabel2.setBounds(60, 130, 270, 30);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\FlightBooking 2.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\FlightBooking 2.png")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 1100, 690);
 

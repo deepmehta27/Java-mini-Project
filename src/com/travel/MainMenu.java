@@ -16,7 +16,7 @@ public class MainMenu extends javax.swing.JFrame {
        clockDisplay();
 
     }
-    
+    private String username;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -95,6 +95,11 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Account");
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
         jPanel1.add(jLabel8);
         jLabel8.setBounds(590, 50, 90, 30);
 
@@ -113,8 +118,6 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel10.setBounds(210, 170, 320, 40);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 700, 0);
-
-        jLabel7.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\MainMenu.png")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(0, 0, 700, 460);
 
@@ -144,9 +147,24 @@ public class MainMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel4MouseClicked
 
     private void jLabel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel5MouseClicked
-      HotelBooking hb=new HotelBooking();
+      //HotelBooking hb=new HotelBooking();
     }//GEN-LAST:event_jLabel5MouseClicked
 
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        Account acc = new Account();
+        acc.setVisible(true);
+        acc.setUsername(getUsername());
+        acc.getData();
+        System.out.println(acc.getUsername());
+        this.dispose();
+        setVisible(false);
+    }//GEN-LAST:event_jLabel8MouseClicked
+    public void setUsername(String username){
+    this.username = username;
+    }
+    public String getUsername(){
+        return username;
+    }
     /**
      * @param args the command line arguments
      */
