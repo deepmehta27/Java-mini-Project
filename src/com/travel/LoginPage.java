@@ -1,6 +1,5 @@
 package com.travel;
 
-import com.mysql.jdbc.Statement;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 import java.sql.DriverManager;

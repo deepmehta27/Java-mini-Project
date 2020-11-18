@@ -26,7 +26,7 @@ public class Account extends javax.swing.JFrame {
     String driverName = "com.mysql.jdbc.Driver";
     String url = "jdbc:mysql://localhost:3306/signup";
     String user = "root";
-    String password = "root";
+    String password ="";
 
     Connection conn= null;
     PreparedStatement ps = null;
@@ -52,14 +52,14 @@ public class Account extends javax.swing.JFrame {
         try
 		{
 			conn = DriverManager.getConnection(url, user, password);
-			ps = conn.prepareStatement("SELECT FirstName, LastName, UserName, email from signupdatabase where UserName = '" +  getUsername() + "' ");
+			ps = conn.prepareStatement("SELECT FirstName, LastName, UserName, emailid from signupdatabase where UserName = '" +  getUsername() + "' ");
 			rs = ps.executeQuery();
 			while(rs.next())
 			{
 				FirstName.setText(FirstName.getText() +" " + rs.getString("FirstName"));
 				LastName.setText(LastName.getText() +" " + rs.getString("LastName"));
 				UserName.setText(UserName.getText() +" " + rs.getString("UserName"));
-				email.setText(email.getText() +" " + rs.getString("email"));
+				emailid.setText(emailid.getText() +" " + rs.getString("emailid"));
 			}
 		}
 		catch(SQLException sqle)
@@ -79,15 +79,18 @@ public class Account extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         FirstName = new javax.swing.JLabel();
+        MainMenuButton = new javax.swing.JButton();
         LastName = new javax.swing.JLabel();
         UserName = new javax.swing.JLabel();
-        email = new javax.swing.JLabel();
-        MainMenuButton = new javax.swing.JButton();
         ChangePasswordButton = new javax.swing.JButton();
+        emailid = new javax.swing.JLabel();
         LogOut = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(300, 150));
+        setMaximumSize(new java.awt.Dimension(750, 500));
+        setMinimumSize(new java.awt.Dimension(750, 500));
         setPreferredSize(new java.awt.Dimension(750, 500));
         getContentPane().setLayout(null);
 
@@ -105,28 +108,10 @@ public class Account extends javax.swing.JFrame {
         FirstName.setForeground(new java.awt.Color(0, 0, 0));
         FirstName.setText("First Name:     ");
         getContentPane().add(FirstName);
-        FirstName.setBounds(230, 160, 310, 23);
-
-        LastName.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        LastName.setForeground(new java.awt.Color(0, 0, 0));
-        LastName.setText("Last Name:     ");
-        getContentPane().add(LastName);
-        LastName.setBounds(230, 220, 340, 23);
-
-        UserName.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        UserName.setForeground(new java.awt.Color(0, 0, 0));
-        UserName.setText("User Name:     ");
-        getContentPane().add(UserName);
-        UserName.setBounds(230, 280, 340, 23);
-
-        email.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
-        email.setForeground(new java.awt.Color(0, 0, 0));
-        email.setText("Email ID:     ");
-        getContentPane().add(email);
-        email.setBounds(250, 340, 350, 23);
+        FirstName.setBounds(50, 130, 310, 23);
 
         MainMenuButton.setBackground(new java.awt.Color(255, 255, 255));
-        MainMenuButton.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\MainMenuButton.png")); // NOI18N
+        MainMenuButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Main.png")); // NOI18N
         MainMenuButton.setBorder(null);
         MainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,10 +119,22 @@ public class Account extends javax.swing.JFrame {
             }
         });
         getContentPane().add(MainMenuButton);
-        MainMenuButton.setBounds(180, 400, 180, 53);
+        MainMenuButton.setBounds(50, 400, 210, 50);
+
+        LastName.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        LastName.setForeground(new java.awt.Color(0, 0, 0));
+        LastName.setText("Last Name:     ");
+        getContentPane().add(LastName);
+        LastName.setBounds(50, 190, 340, 23);
+
+        UserName.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        UserName.setForeground(new java.awt.Color(0, 0, 0));
+        UserName.setText("User Name:     ");
+        getContentPane().add(UserName);
+        UserName.setBounds(50, 260, 340, 23);
 
         ChangePasswordButton.setBackground(new java.awt.Color(255, 255, 255));
-        ChangePasswordButton.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\ChangePassword.png")); // NOI18N
+        ChangePasswordButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\ChangePassword.png")); // NOI18N
         ChangePasswordButton.setBorder(null);
         ChangePasswordButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -145,11 +142,16 @@ public class Account extends javax.swing.JFrame {
             }
         });
         getContentPane().add(ChangePasswordButton);
-        ChangePasswordButton.setBounds(410, 400, 180, 53);
+        ChangePasswordButton.setBounds(460, 400, 200, 50);
+
+        emailid.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
+        emailid.setForeground(new java.awt.Color(0, 0, 0));
+        emailid.setText("Email ID:     ");
+        getContentPane().add(emailid);
+        emailid.setBounds(50, 330, 350, 23);
 
         LogOut.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         LogOut.setForeground(new java.awt.Color(0, 0, 0));
-        LogOut.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\LogoutLogo.png")); // NOI18N
         LogOut.setText("Log Out");
         LogOut.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -157,9 +159,9 @@ public class Account extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LogOut);
-        LogOut.setBounds(620, 110, 90, 23);
+        LogOut.setBounds(610, 110, 90, 19);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\Profile.png")); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Profile.png")); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 750, 500);
 
@@ -231,7 +233,7 @@ public class Account extends javax.swing.JFrame {
     private javax.swing.JLabel LogOut;
     private javax.swing.JButton MainMenuButton;
     private javax.swing.JLabel UserName;
-    private javax.swing.JLabel email;
+    private javax.swing.JLabel emailid;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;

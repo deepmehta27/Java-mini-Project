@@ -98,9 +98,7 @@ public class flightBooking extends javax.swing.JFrame {
         lbldestination = new javax.swing.JLabel();
         cmbdestination = new javax.swing.JComboBox<>();
         lbldepature = new javax.swing.JLabel();
-        departurejDateChooser = new com.toedter.calendar.JDateChooser();
         lblreturn = new javax.swing.JLabel();
-        returnjDateChooser = new com.toedter.calendar.JDateChooser();
         buttonsearch = new javax.swing.JButton();
         buttoncancel = new javax.swing.JButton();
         buttonconfirm = new javax.swing.JButton();
@@ -118,6 +116,8 @@ public class flightBooking extends javax.swing.JFrame {
         returntable = new javax.swing.JTable();
         jLabel7 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        departurejDateChooser = new com.toedter.calendar.JDateChooser();
+        returnjDateChooser = new com.toedter.calendar.JDateChooser();
         jLabel1 = new javax.swing.JLabel();
 
         jTable2.setModel(new javax.swing.table.DefaultTableModel(
@@ -205,11 +205,6 @@ public class flightBooking extends javax.swing.JFrame {
         jPanel1.add(lbldepature);
         lbldepature.setBounds(60, 390, 170, 22);
 
-        departurejDateChooser.setBackground(new java.awt.Color(255, 255, 255));
-        departurejDateChooser.setForeground(new java.awt.Color(255, 255, 255));
-        jPanel1.add(departurejDateChooser);
-        departurejDateChooser.setBounds(60, 420, 270, 30);
-
         lblreturn.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         lblreturn.setForeground(new java.awt.Color(0, 0, 0));
         lblreturn.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
@@ -217,14 +212,10 @@ public class flightBooking extends javax.swing.JFrame {
         jPanel1.add(lblreturn);
         lblreturn.setBounds(60, 470, 160, 22);
 
-        returnjDateChooser.setBackground(new java.awt.Color(102, 102, 102));
-        jPanel1.add(returnjDateChooser);
-        returnjDateChooser.setBounds(60, 500, 270, 30);
-
         buttonsearch.setBackground(new java.awt.Color(255, 255, 255));
         buttonsearch.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         buttonsearch.setForeground(new java.awt.Color(0, 0, 0));
-        buttonsearch.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\SEARCH.png")); // NOI18N
+        buttonsearch.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\SEARCH.png")); // NOI18N
         buttonsearch.setBorder(null);
         buttonsearch.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -242,7 +233,7 @@ public class flightBooking extends javax.swing.JFrame {
         buttoncancel.setBackground(new java.awt.Color(255, 255, 255));
         buttoncancel.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         buttoncancel.setForeground(new java.awt.Color(0, 0, 0));
-        buttoncancel.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\CANCEL.png")); // NOI18N
+        buttoncancel.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\CANCEL.png")); // NOI18N
         buttoncancel.setBorder(null);
         buttoncancel.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -260,6 +251,7 @@ public class flightBooking extends javax.swing.JFrame {
         buttonconfirm.setBackground(new java.awt.Color(255, 255, 255));
         buttonconfirm.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         buttonconfirm.setForeground(new java.awt.Color(0, 0, 0));
+        buttonconfirm.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\confirm.png")); // NOI18N
         buttonconfirm.setBorder(null);
         buttonconfirm.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -409,9 +401,13 @@ public class flightBooking extends javax.swing.JFrame {
         jLabel2.setText("Enter Your Preferences");
         jPanel1.add(jLabel2);
         jLabel2.setBounds(60, 130, 270, 30);
+        jPanel1.add(departurejDateChooser);
+        departurejDateChooser.setBounds(60, 430, 270, 30);
+        jPanel1.add(returnjDateChooser);
+        returnjDateChooser.setBounds(60, 510, 270, 30);
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\FlightBooking 2.png")); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\FlightBooking 2.png")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 1100, 690);
 

@@ -118,6 +118,8 @@ public class MainMenu extends javax.swing.JFrame {
         jLabel10.setBounds(210, 170, 320, 40);
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 700, 0);
+
+        jLabel7.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\MainMenu.png")); // NOI18N
         jPanel1.add(jLabel7);
         jLabel7.setBounds(0, 0, 700, 460);
 

@@ -26,7 +26,7 @@ public class ChangePassword extends javax.swing.JFrame {
     String driverName = "com.mysql.jdbc.Driver";
     String url = "jdbc:mysql://localhost:3306/signup";
     String user = "root";
-    String password = "root";
+    String password ="";
 
     Connection conn= null;
     PreparedStatement ps = null;
@@ -55,8 +55,8 @@ public class ChangePassword extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         ConfirmPassword = new javax.swing.JPasswordField();
         NewPassword = new javax.swing.JPasswordField();
-        SaveButton = new javax.swing.JButton();
         CancelButton = new javax.swing.JButton();
+        SaveButton = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -94,19 +94,8 @@ public class ChangePassword extends javax.swing.JFrame {
         jPanel1.add(NewPassword);
         NewPassword.setBounds(170, 180, 370, 30);
 
-        SaveButton.setBackground(new java.awt.Color(255, 255, 255));
-        SaveButton.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\SaveButton.png")); // NOI18N
-        SaveButton.setBorder(null);
-        SaveButton.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                SaveButtonMouseClicked(evt);
-            }
-        });
-        jPanel1.add(SaveButton);
-        SaveButton.setBounds(390, 380, 120, 54);
-
         CancelButton.setBackground(new java.awt.Color(255, 255, 255));
-        CancelButton.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\CANCEL.png")); // NOI18N
+        CancelButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\CANCEL.png")); // NOI18N
         CancelButton.setBorder(null);
         CancelButton.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -114,9 +103,20 @@ public class ChangePassword extends javax.swing.JFrame {
             }
         });
         jPanel1.add(CancelButton);
-        CancelButton.setBounds(230, 380, 120, 54);
+        CancelButton.setBounds(170, 360, 180, 50);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("D:\\New folder\\Java-mini-Project\\images\\UpdatePassword.png")); // NOI18N
+        SaveButton.setBackground(new java.awt.Color(255, 255, 255));
+        SaveButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\save.png")); // NOI18N
+        SaveButton.setBorder(null);
+        SaveButton.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                SaveButtonMouseClicked(evt);
+            }
+        });
+        jPanel1.add(SaveButton);
+        SaveButton.setBounds(390, 360, 180, 50);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\UpdatePassword.png")); // NOI18N
         jPanel1.add(jLabel1);
         jLabel1.setBounds(0, 0, 750, 500);
 
