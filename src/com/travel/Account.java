@@ -4,6 +4,8 @@
  * and open the template in the editor.
  */
 package com.travel;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -21,6 +23,9 @@ public class Account extends javax.swing.JFrame {
      */
     public Account() {
         initComponents();
+        Toolkit toolkit=getToolkit();
+        Dimension size=toolkit.getScreenSize();
+        setLocation(size.width/2-getWidth()/2,size.height/2-getHeight()/2);
     }
     private String username;
     String driverName = "com.mysql.jdbc.Driver";
@@ -152,6 +157,7 @@ public class Account extends javax.swing.JFrame {
 
         LogOut.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         LogOut.setForeground(new java.awt.Color(0, 0, 0));
+        LogOut.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\LogoutLogo.png")); // NOI18N
         LogOut.setText("Log Out");
         LogOut.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -159,7 +165,7 @@ public class Account extends javax.swing.JFrame {
             }
         });
         getContentPane().add(LogOut);
-        LogOut.setBounds(610, 110, 90, 19);
+        LogOut.setBounds(600, 110, 100, 23);
 
         jLabel2.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Profile.png")); // NOI18N
         getContentPane().add(jLabel2);

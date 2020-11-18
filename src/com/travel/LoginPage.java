@@ -1,5 +1,7 @@
 package com.travel;
 
+import java.awt.Dimension;
+import java.awt.Toolkit;
 import java.sql.Connection;
 import javax.swing.JOptionPane;
 import java.sql.DriverManager;
@@ -12,6 +14,9 @@ public class LoginPage extends javax.swing.JFrame {
    
     public LoginPage() {
         initComponents();
+        Toolkit toolkit=getToolkit();
+        Dimension size=toolkit.getScreenSize();
+        setLocation(size.width/2-getWidth()/2,size.height/2-getHeight()/2);
         setVisible(true);
     }
 

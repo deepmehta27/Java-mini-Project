@@ -60,6 +60,7 @@ public class ChangePassword extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setLocation(new java.awt.Point(300, 150));
 
         jPanel1.setLayout(null);
 
@@ -73,26 +74,26 @@ public class ChangePassword extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("New Password");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(170, 140, 130, 23);
+        jLabel3.setBounds(180, 140, 130, 23);
 
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 18)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 0, 0));
         jLabel4.setText("Confirm Password");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(170, 250, 160, 23);
+        jLabel4.setBounds(180, 250, 160, 23);
 
         ConfirmPassword.setBackground(new java.awt.Color(255, 255, 255));
         ConfirmPassword.setForeground(new java.awt.Color(0, 0, 0));
         ConfirmPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(ConfirmPassword);
-        ConfirmPassword.setBounds(170, 290, 370, 30);
+        ConfirmPassword.setBounds(180, 290, 370, 30);
 
         NewPassword.setBackground(new java.awt.Color(255, 255, 255));
         NewPassword.setFont(new java.awt.Font("Century Gothic", 0, 12)); // NOI18N
         NewPassword.setForeground(new java.awt.Color(0, 0, 0));
         NewPassword.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel1.add(NewPassword);
-        NewPassword.setBounds(170, 180, 370, 30);
+        NewPassword.setBounds(180, 180, 370, 30);
 
         CancelButton.setBackground(new java.awt.Color(255, 255, 255));
         CancelButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\CANCEL.png")); // NOI18N
@@ -103,7 +104,7 @@ public class ChangePassword extends javax.swing.JFrame {
             }
         });
         jPanel1.add(CancelButton);
-        CancelButton.setBounds(170, 360, 180, 50);
+        CancelButton.setBounds(150, 360, 180, 50);
 
         SaveButton.setBackground(new java.awt.Color(255, 255, 255));
         SaveButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\save.png")); // NOI18N

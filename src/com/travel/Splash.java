@@ -4,13 +4,17 @@ package com.travel;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Toolkit;
 
 public class Splash extends javax.swing.JFrame {
    static Thread t = new Thread();
 
     public Splash() throws InterruptedException {
         initComponents();
-        
+        Toolkit toolkit=getToolkit();
+        Dimension size=toolkit.getScreenSize();
+        setLocation(size.width/2-getWidth()/2,size.height/2-getHeight()/2);
         setVisible(true);
         
         for(int i=1;i<=3;i++)
@@ -32,9 +36,6 @@ public class Splash extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -44,26 +45,7 @@ public class Splash extends javax.swing.JFrame {
 
         jPanel1.setLayout(null);
 
-        jLabel1.setFont(new java.awt.Font("Engravers MT", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setText("WELCOME TO");
-        jPanel1.add(jLabel1);
-        jLabel1.setBounds(140, 70, 340, 50);
-
-        jLabel2.setFont(new java.awt.Font("Engravers MT", 1, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 102));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel2.setText("TROPICAL TRAVELS");
-        jPanel1.add(jLabel2);
-        jLabel2.setBounds(40, 120, 520, 70);
-
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\travel.png")); // NOI18N
-        jPanel1.add(jLabel6);
-        jLabel6.setBounds(200, 190, 190, 160);
-
-        jLabel4.setIcon(new javax.swing.ImageIcon("C:\\Users\\DELL\\Downloads\\images\\wallpaper-mania.com_High_resolution_wallpaper_background_ID_77700403809 (1).jpg")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Splash.png")); // NOI18N
         jPanel1.add(jLabel4);
         jLabel4.setBounds(0, 0, 600, 400);
 
@@ -119,10 +101,7 @@ public class Splash extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 

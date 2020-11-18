@@ -178,6 +178,9 @@
         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
           <Color blue="0" green="0" red="0" type="rgb"/>
         </Property>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="2" name="F:\Users\DELL\Documents\NetBeansProjects\Travelagency\images\LogoutLogo.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Log Out"/>
       </Properties>
       <Events>
@@ -185,7 +188,7 @@
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="610" y="110" width="90" height="-1"/>
+          <AbsoluteConstraints x="600" y="110" width="100" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
