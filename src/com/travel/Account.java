@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.travel;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -12,15 +8,10 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import javax.swing.JOptionPane;
-/**
- *
- * @author yashm
- */
+
 public class Account extends javax.swing.JFrame {
 
-    /**
-     * Creates new form Account
-     */
+   
     public Account() {
         initComponents();
         Toolkit toolkit=getToolkit();
@@ -94,9 +85,7 @@ public class Account extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setLocation(new java.awt.Point(300, 150));
-        setMaximumSize(new java.awt.Dimension(750, 500));
         setMinimumSize(new java.awt.Dimension(750, 500));
-        setPreferredSize(new java.awt.Dimension(750, 500));
         getContentPane().setLayout(null);
 
         jPanel1.setLayout(null);
@@ -116,6 +105,7 @@ public class Account extends javax.swing.JFrame {
         FirstName.setBounds(50, 130, 310, 23);
 
         MainMenuButton.setBackground(new java.awt.Color(255, 255, 255));
+        MainMenuButton.setForeground(new java.awt.Color(255, 255, 255));
         MainMenuButton.setIcon(new javax.swing.ImageIcon("F:\\Users\\DELL\\Documents\\NetBeansProjects\\Travelagency\\images\\Main.png")); // NOI18N
         MainMenuButton.setBorder(null);
         MainMenuButton.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -153,7 +143,7 @@ public class Account extends javax.swing.JFrame {
         emailid.setForeground(new java.awt.Color(0, 0, 0));
         emailid.setText("Email ID:     ");
         getContentPane().add(emailid);
-        emailid.setBounds(50, 330, 350, 23);
+        emailid.setBounds(50, 330, 430, 23);
 
         LogOut.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         LogOut.setForeground(new java.awt.Color(0, 0, 0));
