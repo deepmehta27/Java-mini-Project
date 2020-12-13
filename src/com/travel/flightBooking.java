@@ -269,6 +269,12 @@ public class flightBooking extends javax.swing.JFrame {
         jLabel5.setForeground(new java.awt.Color(0, 0, 0));
         jLabel5.setText("Select Flight Id");
 
+        cmbselectdepartflight.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cmbselectdepartflightActionPerformed(evt);
+            }
+        });
+
         departuretable.setBackground(new java.awt.Color(255, 255, 255));
         departuretable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -595,6 +601,10 @@ public class flightBooking extends javax.swing.JFrame {
        LoginPage pg=new LoginPage();
         this.dispose();
     }//GEN-LAST:event_buttoncancelMouseClicked
+
+    private void cmbselectdepartflightActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbselectdepartflightActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cmbselectdepartflightActionPerformed
 
     
     
